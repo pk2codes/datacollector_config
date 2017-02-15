@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      # magic string fallback value that provides the service URL for any client
+      # that doesn’t express a preference (i.e. it’s a useful default).
+      defaultZone: http://localhost:8762/eureka/
+  instance:
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health
